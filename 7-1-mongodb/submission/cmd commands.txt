@@ -1,0 +1,27 @@
+(base) PS C:\Users\Asus> mongosh "mongodb+srv://cluster0.nfnphjn.mongodb.net/" --apiVersion 1 --username Rayan-Alamri
+Enter password: **********
+Current Mongosh Log ID: 691b683ae2200ac0ce63b111
+Connecting to:          mongodb+srv://<credentials>@cluster0.nfnphjn.mongodb.net/?appName=mongosh+2.5.9
+Using MongoDB:          8.0.16 (API Version 1)
+Using Mongosh:          2.5.9
+
+For mongosh info see: https://www.mongodb.com/docs/mongodb-shell/
+
+
+To help improve our products, anonymous usage data is collected and sent to MongoDB periodically (https://www.mongodb.com/legal/privacy-policy).
+You can opt-out by running the disableTelemetry() command.
+
+Atlas atlas-lqhdkq-shard-0 [primary] test> use labDB
+switched to db labDB
+Atlas atlas-lqhdkq-shard-0 [primary] labDB> db.createCollection("students")
+{ ok: 1 }
+Atlas atlas-lqhdkq-shard-0 [primary] labDB> db.students,insertMany([{namAtlas atlas-lqhdkq-shard-0 [primary] labDB> db.students,insertMany([{name: "Ali", age: 21, major: "CS"}, {name: "Sara", age: 23, major: "SE"}])
+ReferenceError: insertMany is not defined
+Atlas atlas-lqhdkq-shard-0 [primary] labDB> db.students.insertMany([{name: "Ali", age: 21, major: "CS"}, {name: "Sara", age: 23, major: "SE"}])
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('691b68fee2200ac0ce63b112'),
+    '1': ObjectId('691b68fee2200ac0ce63b113')
+  }
+}
